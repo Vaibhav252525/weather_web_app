@@ -11,7 +11,7 @@ async function call_API(data) {
 
 	try {
 
-		let res = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=fc980f3d11a74d0da4260214231507&q=${city_name}&days=10&aqi=yes&alerts=yes`);
+		let res = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=fc980f3d11a74d0da4260214231507&q=${city_name}&days=10&aqi=yes&alerts=yes`);
 		let json = await res.json()
 		console.log(json)
 		set_all_data_to_html(json)
