@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <title>Weather App</title>
+
+</head>
+
+<body onload=get_User_location()>
+    <div id="container">
+        <section style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+
+                <h1 id="name"></h1>
+                <small id="state"></small>,
+                <small id="country"></small>
+
+            </div>
+
+            <!-- date section -->
+            <section style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                <div id="time" style="font-size: 28px;"></div>
+                <div id="date"></div>
+            </section>
+
+
+            <div style="display: flex; align-items: center;">
+                <img src="" id="image_container" alt="weather-status-image" />
+                <div>
+                    <div style="font-size: 25px;" id="temp">
+                    </div>
+                    <small id="weather_status"></small>
+                </div>
+
+            </div>
+        </section>
+
+
+        <div id="search_bar">
+            <input type="text" id="city_name" placeholder="Search City" />
+            <button onclick=call_API() id="search_btn"></button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
